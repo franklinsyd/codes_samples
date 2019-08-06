@@ -134,13 +134,13 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 	   $lu6_duration22 = $row['ch22_duration'];
 	   $lu6_duration23 = $row['ch23_duration'];	
 	   $lu6_duration24 = $row['ch24_duration'];
-       $lu6_duration25 = $row['ch25_duration'];
-       $lu6_duration26 = $row['ch26_duration'];
-       $lu6_duration27 = $row['ch27_duration'];
+	   $lu6_duration25 = $row['ch25_duration'];
+	   $lu6_duration26 = $row['ch26_duration'];
+	   $lu6_duration27 = $row['ch27_duration'];
 	   $lu6_duration28 = $row['ch28_duration'];
 	   $lu6_duration29 = $row['ch29_duration'];
-       $lu6_duration30 = $row['ch30_duration'];
-       $lu6_duration31 = $row['ch31_duration'];
+	   $lu6_duration30 = $row['ch30_duration'];
+	   $lu6_duration31 = $row['ch31_duration'];
 	   $lu6_duration32 = $row['ch32_duration'];
 	   $lu6_duration33 = $row['ch33_duration'];
 	   $lu6_duration34 = $row['ch34_duration'];
@@ -168,7 +168,6 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 	   $lu9_sum = $row['ch50_duration'];
 	   
 		//---END-------------
-		
 		$lu2_average= ($row['ch1'] + $row['ch2']+ $row['ch3'])/3 ;
 		$lu4_average= ($row['ch4'] + $row['ch5']+ $row['ch6'] + $row['ch7']+$row['ch8']+ $row['ch9'] + $row['ch10'] + $row['ch11'] + $row['ch12'] +$row['ch13'] +$row['ch14'])/11 ;
 		$lu6_average= ( $row['ch21']+ $row['ch22'] + $row['ch23']+ $row['ch24']+ $row['ch25'] + $row['ch26'] + $row['ch27'] + $row['ch28'] + $row['ch29']+$row['ch30'] +$row['ch31']+$row['ch32']+$row['ch33']+ $row['ch34']+$row['ch35']+ $row['ch36']+ $row['ch37']+ $row['ch38']+ $row['ch39']+ $row['ch40']+ $row['ch41']+$row['ch42']+ $row['ch43']+ $row['ch44']+$row['ch45']+ $row['ch46']+$row['ch47'])/ 27 ;
