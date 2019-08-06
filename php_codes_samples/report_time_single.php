@@ -346,40 +346,37 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 				</div>";
 		}
 		
-			echo '<table >
-				<caption>Time Based Progress in Minutes</caption>
-				<thead>
-					<tr class="row_height">
-						<td></td>
-						<th scope="col">LU 1</th>
-						<th scope="col">LU 2</th>
-						<th scope="col">LU 3</th>
-						<th scope="col">LU 4</th>
-						<th scope="col">LU 5</th>
-
-						
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-					<th scope="row">'.$display_name.' '.$display_surname.' </th>
-					<td>'.$lu1_sum.'</td>
-					<td>'.$lu2_sum.'</td>
-					<td>'.$lu3_sum.'</td>
-					<td>'.$lu4_sum.'</td>
-					<td>'.$lu5_sum.'</td>
+		echo '<table >
+			  <caption>Time Based Progress in Minutes</caption>
+			  <thead>
+			  <tr class="row_height">
+			  <td></td>
+				<th scope="col">LU 1</th>
+				<th scope="col">LU 2</th>
+				<th scope="col">LU 3</th>
+				<th scope="col">LU 4</th>
+				<th scope="col">LU 5</th>
+			 </tr>
+			 </thead>
+			<tbody>
+			<tr>
+			<th scope="row">'.$display_name.' '.$display_surname.' </th>
+			   <td>'.$lu1_sum.'</td>
+			   <td>'.$lu2_sum.'</td>
+			   <td>'.$lu3_sum.'</td>
+			   <td>'.$lu4_sum.'</td>
+			   <td>'.$lu5_sum.'</td>
 		    </tr>
 			<tr>
-			<th scope="row">Averages</th>
-			<td>'.round($l1_avg,1).'</td>
-			<td>'.round($l2_avg,1).'</td>
-			<td>'.round($l3_avg,1).'</td>
-			<td>'.round($l4_avg,1).'</td>
-			<td>'.round($l5_avg,1).'</td>
-		</tr>
-		
-	</tbody>
-</table>'; 
+			  <th scope="row">Averages</th>
+			  <td>'.round($l1_avg,1).'</td>
+			  <td>'.round($l2_avg,1).'</td>
+			  <td>'.round($l3_avg,1).'</td>
+			  <td>'.round($l4_avg,1).'</td>
+			  <td>'.round($l5_avg,1).'</td>
+		    </tr>
+	     </tbody>
+         </table>'; 
 	    echo'</div>'; 	
 
 	}	//End checking user level
