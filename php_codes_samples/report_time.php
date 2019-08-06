@@ -125,7 +125,6 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 	   while($row = mysqli_fetch_array($query)) {
 		
 			//Learning unit 1
-			
 			$l1_duration1 = $row['l1ch1_duration'];
 			$l1_duration2 = $row['l1ch2_duration'];
 			$l1_duration3 = $row['l1ch3_duration'];
