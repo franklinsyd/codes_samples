@@ -69,35 +69,33 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 			     $user_level = $row ['user_level'];
 			 }
             if ($user_level==1){
- 
+			   $qr ="SELECT * from `foreman_db`.`uc_users` WHERE `uc_users`.`user_level`= 0 ";
+			   $query = mysqli_query($mysqli,$qr);
+			   $lu1_average = 0;
+			   $lu2_average = 0;
+			   $lu3_average = 0;
+			   $lu4_average = 0;
+			   $lu5_average = 0;
+			   $login_time="";
+			   $logout_time="";
+			   $display_name="";
+			   $display_surname="";
+			   print '<button class="no-print bt" type="button"> <a href="/umk/umk_foreman/manager_portal.php">Home</a></button>';
 
-		   $qr ="SELECT * from `foreman_db`.`uc_users` WHERE `uc_users`.`user_level`= 0 ";
-		   $query = mysqli_query($mysqli,$qr);
-		   $lu1_average = 0;
-		   $lu2_average = 0;
-		   $lu3_average = 0;
-		   $lu4_average = 0;
-		   $lu5_average = 0;
-		   $login_time="";
-		   $logout_time="";
-		   $display_name="";
-		   $display_surname="";
-           print '<button class="no-print bt" type="button"> <a href="/umk/umk_foreman/manager_portal.php">Home</a></button>';
-
-   		   echo'<table style="width:870px; margin:auto;">
-	            <caption>Foreman Progress Details</caption>
-	            <thead>
-		        <tr class="row_height">
-			    <td></td>
-				<th scope="col">LU 1</th>
-				<th scope="col">LU 2</th>
-				<th scope="col">LU 3</th>
-				<th scope="col">LU 4</th>
-				<th scope="col">LU 5</th>
-				<th scope="col">Login Time</th>
-				<th scope="col">Logout Time</th>
-		        </tr>
-	            </thead> ';
+			   echo'<table style="width:870px; margin:auto;">
+					<caption>Foreman Progress Details</caption>
+					<thead>
+					<tr class="row_height">
+					<td></td>
+					<th scope="col">LU 1</th>
+					<th scope="col">LU 2</th>
+					<th scope="col">LU 3</th>
+					<th scope="col">LU 4</th>
+					<th scope="col">LU 5</th>
+					<th scope="col">Login Time</th>
+					<th scope="col">Logout Time</th>
+					</tr>
+					</thead> ';
 				
 			   while($row = mysqli_fetch_array($query)) {
 				
