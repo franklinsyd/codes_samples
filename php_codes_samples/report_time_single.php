@@ -107,13 +107,14 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		 
 		 //End Per User Form
 	if (isset($_POST)) {
-           $d_name ="";
-		   $l1_avg=0;
-		   $l2_avg=0;
-		   $l3_avg=0;
-		   $l4_avg=0;
-		   $l5_avg=0;
-		 
+
+		 $l1_avg=0;
+		 $l2_avg=0;
+		 $l3_avg=0;
+		 $l4_avg=0;
+		 $l5_avg=0;
+		 $d_name ="";
+		   
 		 if (isset($_POST["user_dname"])) {$d_name = $_POST["user_dname"];
 		 
 		 //GETTING THE AVERAGE PER LEARNING UNIT
