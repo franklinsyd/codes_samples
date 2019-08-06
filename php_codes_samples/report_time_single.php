@@ -107,43 +107,37 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		 
 		 //End Per User Form
 	if (isset($_POST)) {
-         $d_name ="";
-	       $l1_avg=0;
+           $d_name ="";
+		   $l1_avg=0;
 		   $l2_avg=0;
 		   $l3_avg=0;
 		   $l4_avg=0;
 		   $l5_avg=0;
-		
 		 
 		 if (isset($_POST["user_dname"])) {$d_name = $_POST["user_dname"];
 		 
 		 //GETTING THE AVERAGE PER LEARNING UNIT
-		 
-		  $qr ="SELECT * from `foreman_db`.`uc_users`";
-          $query = mysqli_query($mysqli,$qr);
-	      $count1=0;
-		  $count2=0;
-		  $count3=0;
-		  $count4=0;
-		  $count5=0;
-	
-		  $l1_sum =0;
-	      $l2_sum =0;
-		  $l3_sum =0;
-		  $l4_sum =0;
-		  $l5_sum =0;
-
+		 $qr ="SELECT * from `foreman_db`.`uc_users`";
+		 $query = mysqli_query($mysqli,$qr);
+		 $count1=0;
+		 $count2=0;
+		 $count3=0;
+		 $count4=0;
+		 $count5=0;
+		 $l1_sum =0;
+		 $l2_sum =0;
+		 $l3_sum =0;
+		 $l4_sum =0;
+		 $l5_sum =0;
 		 
    while($row = mysqli_fetch_array($query)) {
     
 		//Learning unit 1
-		
 		$l1_duration1 = $row['l1ch1_duration'];
 		$l1_duration2 = $row['l1ch2_duration'];
 		$l1_duration3 = $row['l1ch3_duration'];
 		$l1_duration4 = $row['l1ch4_duration'];
 		$l1_duration5 = $row['l1ch5_duration'];
-		
 		$l1_track=$l1_duration1+$l1_duration2+$l1_duration3+$l1_duration4+$l1_duration5;
 		$l1_sum += $l1_duration1+$l1_duration2+$l1_duration3+$l1_duration4+$l1_duration5;
 	
