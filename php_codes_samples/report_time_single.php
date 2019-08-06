@@ -169,7 +169,6 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		  $count2++;
 		}  
 		//Learning unit 3
-		
 	   $l3_duration1 =  $row['l3ch1_duration'];
 	   $l3_duration2 = $row['l3ch2_duration'];
 	   $l3_duration3 = $row['l3ch3_duration'];
@@ -183,18 +182,17 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		  $count3++;
 		} 
 	 //Learning unit 4
-	   
 	   $l4_duration1 = $row['l4ch1_duration'];
 	   $l4_duration2 = $row['l4ch2_duration'];
-	   $l4_duration3 = $row['l4ch3_duration'];	
+	   $l4_duration3 = $row['l4ch3_duration'];
 	   $l4_duration4 = $row['l4ch4_duration'];
-       $l4_duration5 = $row['l4ch5_duration'];
-       $l4_duration6 = $row['l4ch6_duration'];
-       $l4_duration7 = $row['l4ch7_duration'];
+	   $l4_duration5 = $row['l4ch5_duration'];
+	   $l4_duration6 = $row['l4ch6_duration'];
+	   $l4_duration7 = $row['l4ch7_duration'];
 	   $l4_duration8 = $row['l4ch8_duration'];
 	   $l4_duration9 = $row['l4ch9_duration'];
-       $l4_duration10 = $row['l4ch10_duration'];
-       $l4_duration11 = $row['l4ch11_duration'];
+	   $l4_duration10 = $row['l4ch10_duration'];
+	   $l4_duration11 = $row['l4ch11_duration'];
 	   $l4_duration12 = $row['l4ch12_duration'];
 	   $l4_duration13 = $row['l4ch13_duration'];
 	   $l4_duration14 = $row['l4ch14_duration'];
