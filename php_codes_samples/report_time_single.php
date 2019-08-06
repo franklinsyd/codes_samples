@@ -290,18 +290,18 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 	   $lu3_duration5 = $row['l2ch5_duration'];
 	   $lu3_sum = $lu3_duration1 + $lu3_duration2 + $lu3_duration3 + $lu3_duration4 + $lu3_duration5 ;  
 	 
-	 //Learning unit 4
+	  //Learning unit 4
 	   $lu4_duration1 = $row['l4ch1_duration'];
 	   $lu4_duration2 = $row['l4ch2_duration'];
-	   $lu4_duration3 = $row['l4ch3_duration'];	
+	   $lu4_duration3 = $row['l4ch3_duration'];
 	   $lu4_duration4 = $row['l4ch4_duration'];
-       $lu4_duration5 = $row['l4ch5_duration'];
-       $lu4_duration6 = $row['l4ch6_duration'];
-       $lu4_duration7 = $row['l4ch7_duration'];
+	   $lu4_duration5 = $row['l4ch5_duration'];
+	   $lu4_duration6 = $row['l4ch6_duration'];
+	   $lu4_duration7 = $row['l4ch7_duration'];
 	   $lu4_duration8 = $row['l4ch8_duration'];
 	   $lu4_duration9 = $row['l4ch9_duration'];
-       $lu4_duration10 = $row['l4ch10_duration'];
-       $lu4_duration11 = $row['l4ch11_duration'];
+	   $lu4_duration10 = $row['l4ch10_duration'];
+	   $lu4_duration11 = $row['l4ch11_duration'];
 	   $lu4_duration12 = $row['l4ch12_duration'];
 	   $lu4_duration13 = $row['l4ch13_duration'];
 	   $lu4_duration14 = $row['l4ch14_duration'];
@@ -315,22 +315,20 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 	   $lu4_sum = $lu4_duration1 + $lu4_duration2 + $lu4_duration3 + $lu4_duration4 + $lu4_duration5 + $lu4_duration6 + $lu4_duration7 + $lu4_duration8 + $lu4_duration9 + $lu4_duration10 + $lu4_duration11 + $lu4_duration12 + $lu4_duration13 + $lu4_duration14 + $lu4_duration15 + $lu4_duration16 + $lu4_duration17 + $lu4_duration18 + $lu4_duration19 + $lu4_duration20 + $lu4_duration21 ;
 	   
 	   //Learning unit 5
-	    $lu5_duration1 = $row['l5ch1_duration'];
-	    $lu5_sum =  $lu5_duration1;
-
-	   
-		//---END-------------
+	   $lu5_duration1 = $row['l5ch1_duration'];
+	   $lu5_sum =  $lu5_duration1;
+	  //---END-------------
 		
-	    $lu1_average= ($row['learning_unit_1_ch1'] + $row['learning_unit_1_ch2']+ $row['learning_unit_1_ch3']+ $row['learning_unit_1_ch4']+ $row['learning_unit_1_ch5'])/5 ;
-	    $lu2_average=  ($row['learning_unit_2_ch1'] + $row['learning_unit_2_ch2']+ $row['learning_unit_2_ch3']+ $row['learning_unit_2_ch4']+ $row['learning_unit_2_ch5']+ $row['learning_unit_2_ch6']+ $row['learning_unit_2_ch7']+ $row['learning_unit_2_ch8']+ $row['learning_unit_2_ch9']+ $row['learning_unit_2_ch10']+ $row['learning_unit_2_ch11']+ $row['learning_unit_2_ch12']+ $row['learning_unit_2_ch13']+ $row['learning_unit_2_ch14'])/14 ;
-		$lu3_average=  ($row['learning_unit_3_ch1'] + $row['learning_unit_3_ch2']+ $row['learning_unit_3_ch3']+ $row['learning_unit_3_ch4']+ $row['learning_unit_3_ch5'])/5 ;
-        $lu4_average= ($row['learning_unit_4_ch1']+$row['learning_unit_4_ch2']+$row['learning_unit_4_ch3']+$row['learning_unit_4_ch4']+$row['learning_unit_4_ch5']+$row['learning_unit_4_ch6']+$row['learning_unit_4_ch7']+$row['learning_unit_4_ch8']+$row['learning_unit_4_ch9']+$row['learning_unit_4_ch10']+$row['learning_unit_4_ch11']+$row['learning_unit_4_ch12']+$row['learning_unit_4_ch13']+$row['learning_unit_4_ch14']+$row['learning_unit_4_ch15']+$row['learning_unit_4_ch16']+$row['learning_unit_4_ch17']+$row['learning_unit_4_ch18']+$row['learning_unit_4_ch19']+$row['learning_unit_4_ch20']+$row['learning_unit_4_ch21'])/ 21 ;
-		$lu5_average= ($row['learning_unit_5_ch1']) ;
-		$lu1_average =  number_format($lu1_average, 0, ',', ' ');
-		$lu2_average =  number_format($lu2_average, 0, ',', ' ');
-		$lu3_average =  number_format($lu3_average, 0, ',', ' ');
-		$lu4_average =  number_format($lu4_average, 0, ',', ' ');
-		$lu5_average =  number_format($lu5_average, 0, ',', ' '); 
+	   $lu1_average= ($row['learning_unit_1_ch1'] + $row['learning_unit_1_ch2']+ $row['learning_unit_1_ch3']+ $row['learning_unit_1_ch4']+ $row['learning_unit_1_ch5'])/5 ;
+	   $lu2_average=  ($row['learning_unit_2_ch1'] + $row['learning_unit_2_ch2']+ $row['learning_unit_2_ch3']+ $row['learning_unit_2_ch4']+ $row['learning_unit_2_ch5']+ $row['learning_unit_2_ch6']+ $row['learning_unit_2_ch7']+ $row['learning_unit_2_ch8']+ $row['learning_unit_2_ch9']+ $row['learning_unit_2_ch10']+ $row['learning_unit_2_ch11']+ $row['learning_unit_2_ch12']+ $row['learning_unit_2_ch13']+ $row['learning_unit_2_ch14'])/14 ;
+	   $lu3_average=  ($row['learning_unit_3_ch1'] + $row['learning_unit_3_ch2']+ $row['learning_unit_3_ch3']+ $row['learning_unit_3_ch4']+ $row['learning_unit_3_ch5'])/5 ;
+	   $lu4_average= ($row['learning_unit_4_ch1']+$row['learning_unit_4_ch2']+$row['learning_unit_4_ch3']+$row['learning_unit_4_ch4']+$row['learning_unit_4_ch5']+$row['learning_unit_4_ch6']+$row['learning_unit_4_ch7']+$row['learning_unit_4_ch8']+$row['learning_unit_4_ch9']+$row['learning_unit_4_ch10']+$row['learning_unit_4_ch11']+$row['learning_unit_4_ch12']+$row['learning_unit_4_ch13']+$row['learning_unit_4_ch14']+$row['learning_unit_4_ch15']+$row['learning_unit_4_ch16']+$row['learning_unit_4_ch17']+$row['learning_unit_4_ch18']+$row['learning_unit_4_ch19']+$row['learning_unit_4_ch20']+$row['learning_unit_4_ch21'])/ 21 ;
+	   $lu5_average= ($row['learning_unit_5_ch1']) ;
+	   $lu1_average =  number_format($lu1_average, 0, ',', ' ');
+	   $lu2_average =  number_format($lu2_average, 0, ',', ' ');
+	   $lu3_average =  number_format($lu3_average, 0, ',', ' ');
+	   $lu4_average =  number_format($lu4_average, 0, ',', ' ');
+	   $lu5_average =  number_format($lu5_average, 0, ',', ' '); 
 	   }
 	   echo"<div class='times'>
 				<p class='tm'>LOGIN TIME : ".$login_time." </p>
