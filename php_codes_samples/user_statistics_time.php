@@ -101,7 +101,6 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		//TIMES--------------
 		
 		//Learning unit 2
-		
 		$lu2_duration1 = $row['ch1_duration'];
 		$lu2_duration2 = $row['ch2_duration'];
 		$lu2_duration3 = $row['ch3_duration'];
@@ -121,8 +120,7 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		$lu4_duration14 = $row['ch14_duration'];
 		$lu4_sum = $lu4_duration4 + $lu4_duration5 + $lu4_duration6 + $lu4_duration7 + $lu4_duration8 + $lu4_duration9 + $lu4_duration10 + $lu4_duration11 + $lu4_duration12 + $lu4_duration13 + $lu4_duration14 ;
 	    
-		//Learning unit 5
-		
+	   //Learning unit 5
 	   $lu5_duration15 = $row['ch15_duration'];
 	   $lu5_duration16 = $row['ch16_duration'];
 	   $lu5_duration17 = $row['ch17_duration'];
@@ -131,8 +129,7 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 	   $lu5_duration20 = $row['ch20_duration'];
 	   $lu5_sum = $lu5_duration15 + $lu5_duration16 + $lu5_duration17 + $lu5_duration18 + $lu5_duration19 + $lu5_duration20 ;  
 	 
-	 //Learning unit 6
-	   
+	  //Learning unit 6
 	   $lu6_duration21 = $row['ch21_duration'];
 	   $lu6_duration22 = $row['ch22_duration'];
 	   $lu6_duration23 = $row['ch23_duration'];	
@@ -163,11 +160,12 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 	   $lu6_sum = $lu6_duration21 + $lu6_duration22 + $lu6_duration23 + $lu6_duration24 + $lu6_duration25 + $lu6_duration26 + $lu6_duration27 + $lu6_duration28 + $lu6_duration29 + $lu6_duration30 + $lu6_duration31 + $lu6_duration32 + $lu6_duration33 + $lu6_duration34 + $lu6_duration35 + $lu6_duration36 + $lu6_duration37 + $lu6_duration38 + $lu6_duration39 + $lu6_duration40 + $lu6_duration41 + $lu6_duration42 + $lu6_duration43 + $lu6_duration44 + $lu6_duration45 + $lu6_duration46 + $lu6_duration47;
 	   
 	   //Learning unit 8
-	    $lu8_duration48 = $row['ch48_duration'];
-		$lu8_duration49 = $row['ch49_duration'];
-	    $lu8_sum =  $lu8_duration48 + $lu8_duration49;
+	   $lu8_duration48 = $row['ch48_duration'];
+	   $lu8_duration49 = $row['ch49_duration'];
+	   $lu8_sum =  $lu8_duration48 + $lu8_duration49;
+	   
 	   //Learning unit 9
-	    $lu9_sum = $row['ch50_duration'];
+	   $lu9_sum = $row['ch50_duration'];
 	   
 		//---END-------------
 		
@@ -177,7 +175,6 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
         $lu6_average= ( $row['ch21']+ $row['ch22'] + $row['ch23']+ $row['ch24']+ $row['ch25'] + $row['ch26'] + $row['ch27'] + $row['ch28'] + $row['ch29']+$row['ch30'] +$row['ch31']+$row['ch32']+$row['ch33']+ $row['ch34']+$row['ch35']+ $row['ch36']+ $row['ch37']+ $row['ch38']+ $row['ch39']+ $row['ch40']+ $row['ch41']+$row['ch42']+ $row['ch43']+ $row['ch44']+$row['ch45']+ $row['ch46']+$row['ch47'])/ 27 ;
 		$lu8_average= ( $row['ch48']+ $row['ch49'])/2 ;
 		$lu9_average= $row['ch50'] ;
-		
 		$lu5_average =  number_format($lu5_average, 0, ',', ' ');
 		$lu4_average =  number_format($lu4_average, 0, ',', ' ');
 		$lu2_average =  number_format($lu2_average, 0, ',', ' ');
@@ -194,41 +191,38 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		if ($lu2_average==100 && $lu4_average==100 && $lu5_average==100 && $lu6_average==100 && $lu8_average==100&& $lu9_average==100 )
 		 {
 		      echo"<div class='times'>
-				<p class='tm'>You have successfully completed the training.</p>
-				</div>";
+				   <p class='tm'>You have successfully completed the training.</p>
+				   </div>";
 		}
 		else {
 		          echo"<div class='times'>
-			 <p class='tm'>You have not successfully completed the training.</p>
-				</div>";
+			           <p class='tm'>You have not successfully completed the training.</p>
+				       </div>";
 		}
 		
 			echo '<table >
 				 <caption>Time Based Progress in Minutes</caption>
 				 <thead>
-					<tr class="row_height">
-						<td></td>
-						<th scope="col">LU 2</th>
-						<th scope="col">LU 4</th>
-						<th scope="col">LU 5</th>
-						<th scope="col">LU 6</th>
-						<th scope="col">LU 8</th>
-						<th scope="col">LU 9</th>
-						
-					</tr>
+				<tr class="row_height">
+					<td></td>
+					<th scope="col">LU 2</th>
+					<th scope="col">LU 4</th>
+					<th scope="col">LU 5</th>
+					<th scope="col">LU 6</th>
+					<th scope="col">LU 8</th>
+					<th scope="col">LU 9</th>	
+				</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<th scope="row">'.$display_name.' '.$display_surname.' </th>
-						<td>'.$lu2_sum.'</td>
-						<td>'.$lu4_sum.'</td>
-						<td>'.$lu5_sum.'</td>
-						<td>'.$lu6_sum.'</td>
-						<td>'.$lu8_sum.'</td>
-						<td>'.$lu9_sum.'</td>
-						
+				<tr>
+					<th scope="row">'.$display_name.' '.$display_surname.' </th>
+					<td>'.$lu2_sum.'</td>
+					<td>'.$lu4_sum.'</td>
+					<td>'.$lu5_sum.'</td>
+					<td>'.$lu6_sum.'</td>
+					<td>'.$lu8_sum.'</td>
+					<td>'.$lu9_sum.'</td>
 					</tr>
-					
 				</tbody>
 			</table>';
 	    echo'</div>';
