@@ -93,14 +93,11 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		echo "<select class='no-print' name='user_dname' style='width:150px; margin:auto;'>"; //Always remember this
 		while($data = mysqli_fetch_array($query)) {
 		  $dname= $data ['display_name'];
-		 
 		  echo "<option  value='$dname'>".$data['display_name']."</option>";
-	
 		}
 		  echo "</select >";
 		  echo '<input class="no-print sbt" type="submit" value="Retrieve Report " />';
 		  print '<button class="no-print bt" type="button"> <a href="/umk/umk_foreman/manager_portal.php">Home</a></button>';
-
 		  echo'</form>';
 		 
 		 //End Per User Form
@@ -111,12 +108,8 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 			   $l3_avg=0;
 			   $l4_avg=0;
 			   $l5_avg=0;
-			
-			 
 			 if (isset($_POST["user_dname"])) {$d_name = $_POST["user_dname"];
-			 
 			 //GETTING THE AVERAGE PER LEARNING UNIT
-			 
 			  $qr ="SELECT * from `foreman_db`.`uc_users`";
 			  $query = mysqli_query($mysqli,$qr);
 			  $count1=0;
@@ -124,14 +117,11 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 			  $count3=0;
 			  $count4=0;
 			  $count5=0;
-		
 			  $l1_sum =0;
 			  $l2_sum =0;
 			  $l3_sum =0;
 			  $l4_sum =0;
 			  $l5_sum =0;
-
-			 
 	   while($row = mysqli_fetch_array($query)) {
 		
 			//Learning unit 1
@@ -141,7 +131,6 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 			$l1_duration3 = $row['l1ch3_duration'];
 			$l1_duration4 = $row['l1ch4_duration'];
 			$l1_duration5 = $row['l1ch5_duration'];
-			
 			$l1_track=$l1_duration1+$l1_duration2+$l1_duration3+$l1_duration4+$l1_duration5;
 			$l1_sum += $l1_duration1+$l1_duration2+$l1_duration3+$l1_duration4+$l1_duration5;
 		
@@ -186,7 +175,6 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 			  $count3++;
 			} 
 		 //Learning unit 4
-		   
 		   $l4_duration1 = $row['l4ch1_duration'];
 		   $l4_duration2 = $row['l4ch2_duration'];
 		   $l4_duration3 = $row['l4ch3_duration'];	
@@ -208,7 +196,6 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		   $l4_duration19 = $row['l4ch19_duration'];
 		   $l4_duration20 = $row['l4ch20_duration'];
 		   $l4_duration21 = $row['l4ch11_duration'];
-
 		   $l4_track= $l4_duration1 + $l4_duration2 + $l4_duration3 + $l4_duration4 + $l4_duration5 + $l4_duration6 + $l4_duration7 + $l4_duration8 + $l4_duration9 + $l4_duration10 + $l4_duration11 + $l4_duration12 + $l4_duration13 + $l4_duration14 + $l4_duration15 + $l4_duration16 + $l4_duration17 + $l4_duration18 + $l4_duration19 + $l4_duration20 + $l4_duration21;
 		   $l4_sum += $l4_duration1 + $l4_duration2 + $l4_duration3 + $l4_duration4 + $l4_duration5 + $l4_duration6 + $l4_duration7 + $l4_duration8 + $l4_duration9 + $l4_duration10 + $l4_duration11 + $l4_duration12 + $l4_duration13 + $l4_duration14 + $l4_duration15 + $l4_duration16 + $l4_duration17 + $l4_duration18 + $l4_duration19 + $l4_duration20 + $l4_duration21;
 		   
@@ -219,7 +206,6 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		   
 		   //Learning unit 5
 			$l5_duration1 = $row['l5ch1_duration'];
-		
 			$l5_track =  $l5_duration1;
 			$l5_sum +=  $l5_duration1 ;
 			
@@ -227,23 +213,14 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 			{
 			  $count5++;
 			} 
-		
-		} 
-		
-		 //end getting average numbers
+		} //end getting average numbers
 			
 			$l1_avg = $l1_sum/$count1;
 			$l2_avg = $l2_sum/$count2;
 			$l3_avg = $l3_sum/$count3;
 			$l4_avg = $l4_sum/$count4;	
-			$l5_avg = $l5_sum/$count5;		
-
-			 
-			 
+			$l5_avg = $l5_sum/$count5;
 			 }
-			 
-			// echo ' NAME : '. $d_name.'';  
-			
 		}  
 
 	   $lu1_average=0;
@@ -272,7 +249,6 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		$time_of_request=  $row['supervisor_request_time'];
 		$login_time = $row['login_time'];
 		$logout_time = $row['logout_time'];
-		
 		//TIMES--------------
 		//Learning unit 1
 		$lu1_duration1 = $row['l1ch1_duration'];
@@ -334,7 +310,7 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 	  //Learning unit 5
 	   $lu5_duration1 = $row['l5ch1_duration'];
 	   $lu5_sum =  $lu5_duration1;
-		//---END-------------
+	  //---END-------------
 		
 	    $lu1_average= ($row['learning_unit_1_ch1'] + $row['learning_unit_1_ch2']+ $row['learning_unit_1_ch3']+ $row['learning_unit_1_ch4']+ $row['learning_unit_1_ch5'])/5 ;
 	    $lu2_average=  ($row['learning_unit_2_ch1'] + $row['learning_unit_2_ch2']+ $row['learning_unit_2_ch3']+ $row['learning_unit_2_ch4']+ $row['learning_unit_2_ch5']+ $row['learning_unit_2_ch6']+ $row['learning_unit_2_ch7']+ $row['learning_unit_2_ch8']+ $row['learning_unit_2_ch9']+ $row['learning_unit_2_ch10']+ $row['learning_unit_2_ch11']+ $row['learning_unit_2_ch12']+ $row['learning_unit_2_ch13']+ $row['learning_unit_2_ch14'])/14 ;
@@ -347,8 +323,6 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		$lu4_average =  number_format($lu4_average, 0, ',', ' ');
 		$lu5_average =  number_format($lu5_average, 0, ',', ' ');
 	   }
-
-	   
 	    echo"<div class='times'>
 				<p class='tm'>LOGIN TIME : ".$login_time." </p>
 				<p class='tm'>LOGOUT TIME : ".$logout_time."</p>
@@ -364,7 +338,6 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 			 <p class='tm'>This user has not successfully completed the training.</p>
 				</div>";
 		}
-		
 			echo '<table >
 	        <caption>Time Based Progress in Minutes</caption>
 			<thead>
