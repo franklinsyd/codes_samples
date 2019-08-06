@@ -170,9 +170,8 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		//---END-------------
 		
 		$lu2_average= ($row['ch1'] + $row['ch2']+ $row['ch3'])/3 ;
-	    $lu4_average= ($row['ch4'] + $row['ch5']+ $row['ch6'] + $row['ch7']+$row['ch8']+ $row['ch9'] + $row['ch10'] + $row['ch11'] + $row['ch12'] +$row['ch13'] +$row['ch14'])/11 ;
-		$lu5_average= ( $row['ch15']+ $row['ch16'] + $row['ch17']+ $row['ch18']+ $row['ch19'] + $row['ch20'])/6 ;
-        $lu6_average= ( $row['ch21']+ $row['ch22'] + $row['ch23']+ $row['ch24']+ $row['ch25'] + $row['ch26'] + $row['ch27'] + $row['ch28'] + $row['ch29']+$row['ch30'] +$row['ch31']+$row['ch32']+$row['ch33']+ $row['ch34']+$row['ch35']+ $row['ch36']+ $row['ch37']+ $row['ch38']+ $row['ch39']+ $row['ch40']+ $row['ch41']+$row['ch42']+ $row['ch43']+ $row['ch44']+$row['ch45']+ $row['ch46']+$row['ch47'])/ 27 ;
+		$lu4_average= ($row['ch4'] + $row['ch5']+ $row['ch6'] + $row['ch7']+$row['ch8']+ $row['ch9'] + $row['ch10'] + $row['ch11'] + $row['ch12'] +$row['ch13'] +$row['ch14'])/11 ;
+		$lu6_average= ( $row['ch21']+ $row['ch22'] + $row['ch23']+ $row['ch24']+ $row['ch25'] + $row['ch26'] + $row['ch27'] + $row['ch28'] + $row['ch29']+$row['ch30'] +$row['ch31']+$row['ch32']+$row['ch33']+ $row['ch34']+$row['ch35']+ $row['ch36']+ $row['ch37']+ $row['ch38']+ $row['ch39']+ $row['ch40']+ $row['ch41']+$row['ch42']+ $row['ch43']+ $row['ch44']+$row['ch45']+ $row['ch46']+$row['ch47'])/ 27 ;
 		$lu8_average= ( $row['ch48']+ $row['ch49'])/2 ;
 		$lu9_average= $row['ch50'] ;
 		$lu5_average =  number_format($lu5_average, 0, ',', ' ');
