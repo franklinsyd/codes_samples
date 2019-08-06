@@ -183,25 +183,25 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 	  } 	   
     
 		echo"<div class='times'>
-				<p class='tm'>LOGIN TIME : $login_time </p>
-				<p class='tm'>LOGOUT TIME : $logout_time</p>
-				</div>"; 
+			<p class='tm'>LOGIN TIME : $login_time </p>
+			<p class='tm'>LOGOUT TIME : $logout_time</p>
+			</div>"; 
 		if ($lu2_average==100 && $lu4_average==100 && $lu5_average==100 && $lu6_average==100 && $lu8_average==100&& $lu9_average==100 )
 		 {
 		      echo"<div class='times'>
-				   <p class='tm'>You have successfully completed the training.</p>
-				   </div>";
+				  <p class='tm'>You have successfully completed the training.</p>
+				  </div>";
 		}
 		else {
 		          echo"<div class='times'>
-			           <p class='tm'>You have not successfully completed the training.</p>
-				       </div>";
+					  <p class='tm'>You have not successfully completed the training.</p>
+					  </div>";
 		}
 		
 			echo '<table >
 				 <caption>Time Based Progress in Minutes</caption>
 				 <thead>
-				<tr class="row_height">
+				 <tr class="row_height">
 					<td></td>
 					<th scope="col">LU 2</th>
 					<th scope="col">LU 4</th>
