@@ -274,14 +274,13 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		$lu2_duration13 = $row['l2ch13_duration'];
 		$lu2_duration14 = $row['l2ch14_duration'];
 		$lu2_sum = $lu2_duration1 + $lu2_duration2 + $lu2_duration3 + $lu2_duration4 + $lu2_duration5+ $lu2_duration6 + $lu2_duration7 + $lu2_duration8 + $lu2_duration9 + $lu2_duration10 + $lu2_duration11+$lu2_duration12+$lu2_duration13+$lu2_duration14 ;
-	    
-	   //Learning unit 3
-	   $lu3_duration1 = $row['l2ch1_duration'];
-	   $lu3_duration2 = $row['l2ch2_duration'];
-	   $lu3_duration3 = $row['l2ch3_duration'];
-	   $lu3_duration4 = $row['l2ch4_duration'];
-	   $lu3_duration5 = $row['l2ch5_duration'];
-	   $lu3_sum = $lu3_duration1 + $lu3_duration2 + $lu3_duration3 + $lu3_duration4 + $lu3_duration5 ;  
+		//Learning unit 3
+		$lu3_duration1 = $row['l2ch1_duration'];
+		$lu3_duration2 = $row['l2ch2_duration'];
+		$lu3_duration3 = $row['l2ch3_duration'];
+		$lu3_duration4 = $row['l2ch4_duration'];
+		$lu3_duration5 = $row['l2ch5_duration'];
+		$lu3_sum = $lu3_duration1 + $lu3_duration2 + $lu3_duration3 + $lu3_duration4 + $lu3_duration5 ;  
 	 
 	   //Learning unit 4
 	   $lu4_duration1 = $row['l4ch1_duration'];
@@ -289,12 +288,12 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 	   $lu4_duration3 = $row['l4ch3_duration'];	
 	   $lu4_duration4 = $row['l4ch4_duration'];
        $lu4_duration5 = $row['l4ch5_duration'];
-       $lu4_duration6 = $row['l4ch6_duration'];
-       $lu4_duration7 = $row['l4ch7_duration'];
+	   $lu4_duration6 = $row['l4ch6_duration'];
+	   $lu4_duration7 = $row['l4ch7_duration'];
 	   $lu4_duration8 = $row['l4ch8_duration'];
 	   $lu4_duration9 = $row['l4ch9_duration'];
-       $lu4_duration10 = $row['l4ch10_duration'];
-       $lu4_duration11 = $row['l4ch11_duration'];
+	   $lu4_duration10 = $row['l4ch10_duration'];
+	   $lu4_duration11 = $row['l4ch11_duration'];
 	   $lu4_duration12 = $row['l4ch12_duration'];
 	   $lu4_duration13 = $row['l4ch13_duration'];
 	   $lu4_duration14 = $row['l4ch14_duration'];
