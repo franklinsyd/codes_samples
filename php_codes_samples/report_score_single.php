@@ -54,7 +54,6 @@ require_once("models/db-settings.php");
 if (!securePage($_SERVER['PHP_SELF'])){die();}
 
   if(isUserLoggedIn()){	
-   
           //***SAVING DATA IN HISTORICAL TABLE
           $user_n = $loggedInUser->username;
             //Check if the user is of level 0 (Operator or Foreman) or level 1 (Manager or Supervisor)
@@ -117,13 +116,11 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 		$time_of_request=  $row['supervisor_request_time'];
 		$login_time = $row['login_time'];
 		$logout_time = $row['logout_time'];
-		
 		$lu1_average= ($row['learning_unit_1_ch1'] + $row['learning_unit_1_ch2']+ $row['learning_unit_1_ch3']+ $row['learning_unit_1_ch4']+ $row['learning_unit_1_ch5'])/5 ;
 	    $lu2_average=  ($row['learning_unit_2_ch1'] + $row['learning_unit_2_ch2']+ $row['learning_unit_2_ch3']+ $row['learning_unit_2_ch4']+ $row['learning_unit_2_ch5']+ $row['learning_unit_2_ch6']+ $row['learning_unit_2_ch7']+ $row['learning_unit_2_ch8']+ $row['learning_unit_2_ch9']+ $row['learning_unit_2_ch10']+ $row['learning_unit_2_ch11']+ $row['learning_unit_2_ch12']+ $row['learning_unit_2_ch13']+ $row['learning_unit_2_ch14'])/14 ;
 		$lu3_average=  ($row['learning_unit_3_ch1'] + $row['learning_unit_3_ch2']+ $row['learning_unit_3_ch3']+ $row['learning_unit_3_ch4']+ $row['learning_unit_3_ch5'])/5 ;
         $lu4_average= ($row['learning_unit_4_ch1']+$row['learning_unit_4_ch2']+$row['learning_unit_4_ch3']+$row['learning_unit_4_ch4']+$row['learning_unit_4_ch5']+$row['learning_unit_4_ch6']+$row['learning_unit_4_ch7']+$row['learning_unit_4_ch8']+$row['learning_unit_4_ch9']+$row['learning_unit_4_ch10']+$row['learning_unit_4_ch11']+$row['learning_unit_4_ch12']+$row['learning_unit_4_ch13']+$row['learning_unit_4_ch14']+$row['learning_unit_4_ch15']+$row['learning_unit_4_ch16']+$row['learning_unit_4_ch17']+$row['learning_unit_4_ch18']+$row['learning_unit_4_ch19']+$row['learning_unit_4_ch20']+$row['learning_unit_4_ch21']+$row['learning_unit_4_ch22'])/ 22 ;
 		$lu5_average= ( +$row['learning_unit_5_ch1']) ;
-		
 		$lu1_average =  number_format($lu1_average, 0, ',', ' ');
 		$lu2_average =  number_format($lu2_average, 0, ',', ' ');
 		$lu3_average =  number_format($lu3_average, 0, ',', ' ');
