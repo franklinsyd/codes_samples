@@ -159,9 +159,9 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 			if ($l2_track> 0)
 			{
 			  $count2++;
-			}  
-			//Learning unit 3
+			}
 			
+		   //Learning unit 3
 		   $l3_duration1 =  $row['l3ch1_duration'];
 		   $l3_duration2 = $row['l3ch2_duration'];
 		   $l3_duration3 = $row['l3ch3_duration'];
@@ -174,7 +174,7 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 			{
 			  $count3++;
 			} 
-		 //Learning unit 4
+		  //Learning unit 4
 		   $l4_duration1 = $row['l4ch1_duration'];
 		   $l4_duration2 = $row['l4ch2_duration'];
 		   $l4_duration3 = $row['l4ch3_duration'];	
